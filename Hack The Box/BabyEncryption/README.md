@@ -30,7 +30,7 @@ f.close()
 ## Solution
 
 We are given 2 files: an encryption script ('chall.py') and an encrypted key ('msg.enc'). When attempting to run the Python script, we encounter the following error due to a library we can't use:
-```console
+```
 Traceback (most recent call last):
     File "chall.py", line 2, in <module>
         from secret import MSG
