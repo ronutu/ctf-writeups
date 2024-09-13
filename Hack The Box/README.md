@@ -2,5 +2,5 @@
 
 | Challenge  | Difficulty | Category |
 | ------------- | ------------- | ------------- |
-| [a relative link](BabyEncryption/README.md) BabyEncryption  | Very easy  | crypto  |
+| [BabyEncryption](BabyEncryption/README.md) | Very easy  | crypto  |
 
