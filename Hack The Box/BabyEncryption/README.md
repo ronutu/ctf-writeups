@@ -6,7 +6,7 @@ You are after an organised crime group which is responsible for the illegal weap
 
 ## Task files:
 ### 1. chall.py
-```
+```python
 import string
 from secret import MSG
 
