@@ -9,3 +9,6 @@ After struggling to secure our secret strings for a long time, we finally figure
 ### behindthescenes
 
 ## Solution
+
+We are provided with a file without any information about what it is so we use **strings**.
+![behind-the-scenes1](https://github.com/user-attachments/assets/5df564e2-5a84-4e94-b9aa-a65e6fcb55ee)
