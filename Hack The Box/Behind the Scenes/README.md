@@ -22,8 +22,6 @@ This reveals that the file is an ELF binary. Let's try running it and see what h
 ./challenge <password>
 ```
 
-It looks like we must find a password hoping it returns the flag.
-
 To further investigate, we open the file in Ghidra to analyze it more deeply. While examining the binary, we find the main function:
 
 ```c
