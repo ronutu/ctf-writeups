@@ -18,11 +18,33 @@ file behindthescenes
 behindthescenes: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=e60ae4c886619b869178148afd12d0a5428bfe18, for GNU/Linux 3.2.0, not stripped
 ```
 
-![behind-the-scenes1](https://github.com/user-attachments/assets/5df564e2-5a84-4e94-b9aa-a65e6fcb55ee)
-
 This indicates that the file is an ELF binary file. Next, we run ```strings``` to look for anything useful:
 
-![behind-the-scenes2](https://github.com/user-attachments/assets/0c071cd2-4332-4239-949a-d4d5aacfb5d1)
+```
+strings behindthescenes
+
+lib64/ld-linux-x86-64.so.2
+libc.so.6
+strncmp
+puts
+__stack_chk_fail
+printf
+strlen
+sigemptyset
+memset
+sigaction
+__cxa_finalize
+__libc_start_main
+GLIBC_2.4
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_ITM_registerTMCloneTable
+u+UH
+[]A\A]A^A_
+./challenge <password>
+> HTB{%s}
+```
 
 The output ```./challenge <password>``` and ```> HTB{%s}``` gives us a small clue. We run the file by using ```./behindthescenes password``` and maybe it returns the flag. Next, we will use Ghidra to take a closer look at the file. While examining the file, we find this:
 
