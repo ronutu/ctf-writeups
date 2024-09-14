@@ -81,7 +81,11 @@ The output ```./challenge <password>``` and ```> HTB{%s}``` gives us a small clu
 
 It appears that the password is written vertically, so we will try that and see what we get:
 
-![behind-the-scenes4](https://github.com/user-attachments/assets/aebc7b36-2ff2-41ad-adf0-02e869104930)
+```bash
+./behindthescenes Itz_0nLy_UD2
+
+> HTB{Itz_0nLy_UD2}
+```
 
 ## Flag
 
