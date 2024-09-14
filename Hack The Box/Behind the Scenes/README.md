@@ -44,6 +44,7 @@ u+UH
 []A\A]A^A_
 ./challenge <password>
 > HTB{%s}
+...
 ```
 
 The output ```./challenge <password>``` and ```> HTB{%s}``` gives us a small clue. We run the file by using ```./behindthescenes password``` hoping it returns the flag.
