@@ -29,4 +29,6 @@ It appears that the password is written vertically, so we will try that and see 
 
 ## Flag
 
-```HTB{Itz_0nLy_UD2}```
+```
+HTB{Itz_0nLy_UD2}
+```
