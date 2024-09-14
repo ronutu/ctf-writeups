@@ -12,7 +12,7 @@ After struggling to secure our secret strings for a long time, we finally figure
 
 We are provided with a file without any information about what it is so we use ```file```.
 
-```console
+```bash
 file behindthescenes
 
 behindthescenes: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=e60ae4c886619b869178148afd12d0a5428bfe18, for GNU/Linux 3.2.0, not stripped
