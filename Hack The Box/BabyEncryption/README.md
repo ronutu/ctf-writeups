@@ -36,7 +36,7 @@ Traceback (most recent call last):
         from secret import MSG
 ImportError: cannot import name 'MSG' from 'secret'
 ```
-The first thing we notice is that the function iterates through each character of the message and performs arithmetic operations before appending the result to a list. Since you can't directly add an integer to a char `123 * char + 18`, we think that the message was first converted into its ASCII equivalent.
+The first thing we notice is that the function iterates through each character of the message and performs arithmetic operations before appending the result to a list. Since you can't directly add an int to a char ( `123 * char + 18` ), we think that the message was first converted into its ASCII equivalent.
 
 Afterward, the list is converted to bytes and then into hexadecimal format.
 
