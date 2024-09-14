@@ -29,10 +29,41 @@ f.close()
 
 ## Solution
 
-We are given 2 files: an encryption script ('chall.py') and an encrypted key ('msg.enc'). When attempting to run the Python script, we encounter the following error due to a library we can't use:
+We are provided with 2 files: an encryption script ('chall.py') and an encrypted message ('msg.enc'). Running the Python script directly results in the following error due to a missing library:
 ```
 Traceback (most recent call last):
     File "chall.py", line 2, in <module>
         from secret import MSG
 ImportError: cannot import name 'MSG' from 'secret'
+```
+The first thing we notice is that the function iterates through each character of the message and performs arithmetic operations before appending the result to a list. Since you can't directly add an integer to a character, we think that the message was first converted into its ASCII equivalent.
+
+Afterward, the list is converted to bytes and then into hexadecimal format.
+
+To decrypt the message, we need to reverse the process described in the script, essentially working backward from the encrypted output. Here's the script we came up with to decrypt the message:
+```
+f = open("msg.enc", "r")
+msg = f.read()
+byte_msg = bytes.fromhex(msg)
+decrypted_msg = ""
+for char in byte_msg:
+        for i in range(256):
+                if char == ((123*i + 18) % 256):
+                        decrypted_msg += chr(i)
+                        break
+
+print(decrypted_msg)
+```
+
+One key takeaway is that iterating over a bytes object produces integers, which is helpful since we don't need an extra step to convert the encrypted data from bytes to integers.
+
+We then iterate over each byte in the encrypted message, comparing it to every possible ASCII value. We apply the same arithmetic operations that were used in the encryption function to find which ASCII value matches the byte. Once we find the matching ASCII value, we convert it back into a character and construct the decrypted message.
+```
+Th3 nucl34r w1ll 4rr1v3 0n fr1d4y.
+HTB{l00k_47_y0u_r3v3rs1ng_3qu4710n5_c0ngr475}
+```
+
+## Flag
+```
+HTB{l00k_47_y0u_r3v3rs1ng_3qu4710n5_c0ngr475}
 ```
