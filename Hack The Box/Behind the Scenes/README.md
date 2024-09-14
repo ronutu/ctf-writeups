@@ -22,9 +22,7 @@ This reveals that the file is an ELF binary. Let's try running it and see what h
 ./challenge <password>
 ```
 
-
-
-The output ```./challenge <password>``` and ```> HTB{%s}``` gives us a small clue. We run the file by using ```./behindthescenes password``` hoping it returns the flag.
+It looks like we must find a password hoping it returns the flag.
 
 To further investigate, we open the file in Ghidra to analyze it more deeply. While examining the binary, we find the following code:
 
