@@ -10,7 +10,7 @@ After struggling to secure our secret strings for a long time, we finally figure
 
 ## Solution
 
-We are provided with a file without any information about what it is so we use ```file```.
+We are provided with a file without any details, so we start by identifying it using the ```file``` command.
 
 ```bash
 file behindthescenes
@@ -18,7 +18,7 @@ file behindthescenes
 behindthescenes: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=e60ae4c886619b869178148afd12d0a5428bfe18, for GNU/Linux 3.2.0, not stripped
 ```
 
-This indicates that the file is an ELF binary file. Next, we run ```strings``` to look for anything useful:
+This reveals that the file is an ELF binary. Next, we use the ```strings``` command to search for any useful information:
 
 ```bash
 strings behindthescenes
@@ -46,8 +46,9 @@ u+UH
 > HTB{%s}
 ```
 
-The output ```./challenge <password>``` and ```> HTB{%s}``` gives us a small clue. We run the file by using ```./behindthescenes password``` and maybe it returns the flag. Next, we will use Ghidra to take a closer look at the file. While examining the file, we find this:
+The output ```./challenge <password>``` and ```> HTB{%s}``` gives us a small clue. We run the file by using ```./behindthescenes password``` hoping it returns the flag.
 
+To further investigate, we open the file in Ghidra to analyze it more deeply. While examining the binary, we find the following code:
 
 ```nasm
         0010201b 49              ??         49h    I
