@@ -49,7 +49,7 @@ u+UH
 The output ```./challenge <password>``` and ```> HTB{%s}``` gives us a small clue. We run the file by using ```./behindthescenes password``` and maybe it returns the flag. Next, we will use Ghidra to take a closer look at the file. While examining the file, we find this:
 
 
-```
+```nasm
         0010201b 49              ??         49h    I
         0010201c 74              ??         74h    t
         0010201d 7a              ??         7Ah    z
