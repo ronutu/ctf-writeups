@@ -24,36 +24,27 @@ This reveals that the file is an ELF binary. Let's try running it and see what h
 
 It looks like we must find a password hoping it returns the flag.
 
-To further investigate, we open the file in Ghidra to analyze it more deeply. While examining the binary, we find the following code:
+To further investigate, we open the file in Ghidra to analyze it more deeply. While examining the binary, we find the main function:
 
-```nasm
-        0010201b 49              ??         49h    I
-        0010201c 74              ??         74h    t
-        0010201d 7a              ??         7Ah    z
-        0010201e 00              ??         00h
-        0010201f 5f              ??         5Fh    _
-        00102020 30              ??         30h    0
-        00102021 6e              ??         6Eh    n
-        00102022 00              ??         00h
-        00102023 4c              ??         4Ch    L
-        00102024 79              ??         79h    y
-        00102025 5f              ??         5Fh    _
-        00102026 00              ??         00h
-        00102027 55              ??         55h    U
-        00102028 44              ??         44h    D
-        00102029 32              ??         32h    2
-        0010202a 00              ??         00h
-        0010202b 3e              ??         3Eh    >
-        0010202c 20              ??         20h     
-        0010202d 48              ??         48h    H
-        0010202e 54              ??         54h    T
-        0010202f 42              ??         42h    B
-        00102030 7b              ??         7Bh    {
-        00102031 25              ??         25h    %
-        00102032 73              ??         73h    s
-        00102033 7d              ??         7Dh    }
-        00102034 0a              ??         0Ah
-        00102035 00              ??         00h
+```c
+void main(void)
+
+{
+  code *pcVar1;
+  long in_FS_OFFSET;
+  sigaction local_a8;
+  undefined8 local_10;
+  
+  local_10 = *(undefined8 *)(in_FS_OFFSET + 0x28);
+  memset(&local_a8,0,0x98);
+  sigemptyset(&local_a8.sa_mask);
+  local_a8.__sigaction_handler.sa_handler = segill_sigaction;
+  local_a8.sa_flags = 4;
+  sigaction(4,&local_a8,(sigaction *)0x0);
+                    /* WARNING: Does not return */
+  pcVar1 = (code *)invalidInstructionException();
+  (*pcVar1)();
+}
 ```
 
 It appears that the password is written vertically, so we will try that and see what we get:
