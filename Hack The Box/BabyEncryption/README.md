@@ -57,7 +57,7 @@ print(decrypted_msg)
 
 One key takeaway is that iterating over a bytes object produces integers, which is helpful since we don't need an extra step to convert the encrypted data from bytes to integers.
 
-We then iterate over each byte in the encrypted message, comparing it to every possible ASCII value. We apply the same arithmetic operations that were used in the encryption function to find which ASCII value matches the byte. Once we find the matching ASCII value, we convert it back into a character and construct the decrypted message.
+We then iterate over each byte in the encrypted message, comparing it to every possible ASCII value. We apply the same arithmetic operations that were used in the encryption function to find which ASCII value matches the byte. Once we find the matching ASCII value, we convert it back into a char and construct the decrypted message.
 ```
 Th3 nucl34r w1ll 4rr1v3 0n fr1d4y.
 HTB{l00k_47_y0u_r3v3rs1ng_3qu4710n5_c0ngr475}
