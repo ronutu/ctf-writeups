@@ -41,7 +41,7 @@ The first thing we notice is that the function iterates through each character o
 Afterward, the list is converted to bytes and then into hexadecimal format.
 
 To decrypt the message, we need to reverse the process described in the script, essentially working backward from the encrypted output. Here's the script we came up with to decrypt the message:
-```
+```python
 f = open("msg.enc", "r")
 msg = f.read()
 byte_msg = bytes.fromhex(msg)
