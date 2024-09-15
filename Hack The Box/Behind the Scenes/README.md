@@ -46,8 +46,10 @@ void main(void)
 ```
 
 In order to understand what it does, we will examine every line of code.
+
 The ```code *pcVar1;``` is Ghidra's way to define a function pointer when it doesn't know what kind of variables it receives and returns. Looking at the end of the program we see that ```pcVar1``` receives the address of this function ```invalidInstructionException()```.  After that it calls the function. We will come back to this later.
-The 
+
+We have another few variables defined. A long, a sigaction, 
 
 It appears that the password is written vertically, so we will try that and see what we get:
 
