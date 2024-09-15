@@ -22,7 +22,7 @@ This reveals that the file is an ELF binary. Let's try running it and see what h
 ./challenge <password>
 ```
 
-To further investigate, we open the file in Ghidra to analyze it more deeply. While examining the binary, we find the main function:
+To further investigate, we open the file in Ghidra to analyze it more deeply. The main function looks like this:
 
 ```c
 void main(void)
@@ -44,6 +44,10 @@ void main(void)
   (*pcVar1)();
 }
 ```
+
+In order to understand what it does, we will examine every line of code.
+The ```code *pcVar1;``` is Ghidra's way to define a function pointer when it doesn't know what kind of variables it receives and returns. Looking at the end of the program we see that ```pcVar1``` receives the address of this function ```invalidInstructionException()```.  After that it calls the function. We will come back to this later.
+The 
 
 It appears that the password is written vertically, so we will try that and see what we get:
 
