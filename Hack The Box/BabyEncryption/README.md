@@ -36,10 +36,11 @@ Traceback (most recent call last):
         from secret import MSG
 ImportError: cannot import name 'MSG' from 'secret'
 ```
-The first thing we notice is that the function iterates through each char of the message and performs arithmetic operations before appending the result to a list. Since you can't directly add an int to a char ( `123 * char + 18` ), we think that the message was first converted into its ASCII equivalent.
 
-Afterward, the list is converted to bytes and then into hexadecimal format.
+We discovered two approaches to solve this problem: one involves a brute-force method, where each number from 1 to 255 is tested with the given arithmetic operations to check for a match against the resulted message. The other, more elegant approach, transforms the problem into a linear congruence and uses an algorithm to find the solution.
 
+### Method 1:
+We will take each number from 0 to 255 and apply the same arithemtic oprations to them `(123*i + 18) % 256`.
 To decrypt the message, we need to reverse the process described in the script, essentially working backward from the encrypted output. Here's the script we came up with to decrypt the message:
 ```python
 f = open("msg.enc", "r")
