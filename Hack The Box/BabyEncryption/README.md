@@ -60,6 +60,7 @@ HTB{l00k_47_y0u_r3v3rs1ng_3qu4710n5_c0ngr475}
 ```
 
 ### Method 2:
+The nicer way involves looking at this problem like it is a linear congruence. In fact, it is like this: $`1`$
 
 ## Flag
 ```
