@@ -40,7 +40,7 @@ def conv(array1:bytes, array2:bytes) -> bytes:
     return res
 ```
 
-Now that we a have a clearer way of the function, we can observe that this is a linear congruence system that looks like this:<br>
+Now that we a have a clearer idea of how the function works, we can observe that this is a linear congruence system that looks like this:<br>
 
 $` plain1 = \{p_0, p_1, p_2, \ldots, p_{365}\} \quad \text{(366 elements)} `$ 
 <br>
