@@ -41,7 +41,7 @@ Traceback (most recent call last):
 ImportError: cannot import name 'MSG' from 'secret'
 ```
 
-We discovered two approaches to solve this problem: one involves a brute-force method, where each number from 1 to 255 is tested with the given arithmetic operations to check for a match against the resulted message. The other, more elegant approach, transforms the problem into a linear congruence and uses an algorithm to find the solution.
+We discovered two approaches to solve this problem: one involves a brute-force method, where each number from 0 to 255 is tested with the given arithmetic operations to check for a match against the resulted message. The other, more elegant approach, transforms the problem into a linear congruence and uses an algorithm to find the solution.
 
 ### Method 1:
 
