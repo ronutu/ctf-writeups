@@ -68,7 +68,9 @@ HTB{l00k_47_y0u_r3v3rs1ng_3qu4710n5_c0ngr475}
 
 ### Method 2:
 
-A more elegant approach involves viewing this problem as a linear congruence. Specifically, it can be represented as: $`123*`$i $`+ 18 \equiv`$ a $`\pmod{256}`$, where a corresponds to each value from the encrypted message. To solve this, we will use [this algorithm](https://stackoverflow.com/questions/48252234/how-to-solve-a-congruence-system-in-python). It is a recursive function based on Euler's theorem and it looks like this:
+A more elegant approach involves viewing this problem as a linear congruence. Specifically, it can be represented as:
+$`123*`$i $`+ 18 \equiv`$ a $`\pmod{256}`$, 
+where a corresponds to each value from the encrypted message. To solve this, we will use [this algorithm](https://stackoverflow.com/questions/48252234/how-to-solve-a-congruence-system-in-python). It is a recursive function based on Euler's theorem and it looks like this:
 
 ```python
 def linear_congruence(a, b, m):
