@@ -42,12 +42,11 @@ def conv(array1:bytes, array2:bytes) -> bytes:
 
 Now that we a have a clearer way of the function, we can observe that this is a linear congruence system that looks like this:<br>
 
-$$plain1 = \{p_0, p_1, p_2, \ldots, p_{365}\} \quad \text{(366 elements)}$$
-
-$\\
+$$
+plain1 = \{p_0, p_1, p_2, \ldots, p_{365}\} \quad \text{(366 elements)}\\
 key = \{171, 236, 233, \ldots, 124\} \quad \text{(32 elements)}\\
 cip = \{23, 192, 128, \ldots, 72\} \quad \text{(397 elements)}\\
-$
+$$
 
 $
 \begin{cases}
