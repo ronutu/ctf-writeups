@@ -65,6 +65,7 @@ p_{335} \cdot 124 + p_{366} \cdot 171 \equiv 241 \pmod{256}\\
 `$
 
 We will solve this by constructing 2 matrices, both with 397 rows:<br>
+
 $$
 A =
 \begin{pmatrix}
@@ -83,6 +84,7 @@ b =
 72
 \end{pmatrix}\\
 $$
+
 Thus, we have the system of equations represented as $Ax \equiv b \pmod{256}$.
 
 Now we will compute the matrix in Python:
