@@ -87,7 +87,7 @@ $$
 
 Thus, we have the system of equations represented as $Ax \equiv b \pmod{256}$.
 
-Now we will compute the matrix in Python:
+Now we will compute the matrix A in Python:
 ```python
     A = np.zeros((397, 397))
 
