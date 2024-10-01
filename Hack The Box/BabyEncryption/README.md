@@ -74,6 +74,7 @@ A more elegant approach involves looking at this problem as a linear congruence.
 $123*i + 18 \equiv a \pmod{256}$,
 
 </div> 
+
 where $a$ corresponds to each value from the encrypted message. To solve this, we will use [this algorithm](https://stackoverflow.com/questions/48252234/how-to-solve-a-congruence-system-in-python). It is a recursive function based on Euler's theorem and it looks like this:
 
 ```python
