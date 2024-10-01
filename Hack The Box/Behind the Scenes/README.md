@@ -53,7 +53,7 @@ The ```code *pcVar1;``` is Ghidra's way to define a function pointer when it doe
 > Generates an invalid opcode. This instruction is provided for software testing to explicitly generate an invalid opcode. The opcode for this instruction is reserved for this purpose.<br>
 Other than raising the invalid opcode exception, this instruction is the same as the NOP instruction.
 
-Practically, the UD2 instruction raises an exceptio and Ghidra doesn't dissamble further more the code. 
+In this case, the UD2 instruction triggers an exception, and Ghidra does not disassemble the code any further.
 
 ```
         001012e6 0f 0b           UD2
@@ -62,7 +62,7 @@ Practically, the UD2 instruction raises an exceptio and Ghidra doesn't dissamble
         001012ea 5c              ??         5Ch    \
 ```
 
-We will replace the UD2 instruction with NOP and manually disassemble the code. The newly revealed main function now looks like this:
+We will replace the UD2 instruction with NOP and manually disassemble the code. The newly revealed main function looks like this:
 
 ```c
 undefined8 main(void)
