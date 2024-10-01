@@ -2,6 +2,6 @@
 
 | Challenge  | Difficulty | Category |
 | ------------- | ------------- | ------------- |
-| [BabyEncryption](BabyEncryption/) | Very easy  | crypto  |
-| [Behind the Scenes](Behind%20the%20Scenes/) | Very easy  | reversing  |
+| [BabyEncryption](BabyEncryption/) | Very easy  | Crypto  |
+| [Behind the Scenes](Behind%20the%20Scenes/) | Very easy  | Reversing  |
 
