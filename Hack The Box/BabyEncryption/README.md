@@ -70,7 +70,9 @@ HTB{l00k_47_y0u_r3v3rs1ng_3qu4710n5_c0ngr475}
 
 A more elegant approach involves looking at this problem as a linear congruence. Specifically, it can be represented as:
 <div align="center">
-$123*i + 18 \equiv a \pmod{256}$,
+    
+$123*i + 18 \equiv a \pmod{256}$
+
 </div> 
 where a corresponds to each value from the encrypted message. To solve this, we will use [this algorithm](https://stackoverflow.com/questions/48252234/how-to-solve-a-congruence-system-in-python). It is a recursive function based on Euler's theorem and it looks like this:
 
