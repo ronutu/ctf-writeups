@@ -74,7 +74,7 @@ A =
 233 & 236 & 171 & \ldots & 0\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 0 & 0 & 0 & \ldots & 171
-\end{pmatrix}\\
+\end{pmatrix}, 
 b =
 \begin{pmatrix}
 23\\
