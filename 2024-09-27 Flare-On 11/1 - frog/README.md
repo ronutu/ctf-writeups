@@ -58,7 +58,7 @@ for i in range(1, 20):
         print(GenerateFlagText(i, j))
 ```
 
-Running this script will generate some messy outputs. By using ```CTRL+F``` and knowing that the flag format is something@flare-on.com, we can quickly identify the correct flag.
+Running this script will generate some messy outputs. By using ```CTRL+F``` and knowing that the flag format is ```something@flare-on.com```, we can quickly identify the correct flag.
 
 
 These are just three quick methods to solve the challenge, but there are many more. For instance, we could delete all blocks from the source code or modify the start position of the frog to be directly at the center.
