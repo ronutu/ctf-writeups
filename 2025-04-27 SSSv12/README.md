@@ -11,5 +11,5 @@
 | [One by One](One%20by%20One/)     | Entry Level | Binary   |
 | [Pinpoint](Pinpoint/)             | Entry Level | Binary   |
 | [Sequel Pro](Sequel%20Pro/)       | Entry Level | Web      |
-| [The Talker](The%20Talker/)       | Entry Level | Web      |
+| [The Talker](The%20Talker/)       | Entry Level | Binary   |
 | [Welcome](Welcome/)               | Entry Level | Web      |
