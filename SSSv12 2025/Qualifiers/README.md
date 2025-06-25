@@ -1,4 +1,4 @@
-# SSSv12
+# SSSv12 Qualifiers
 
 | Challenge                         | Difficulty  | Category |
 | --------------------------------- | ----------- | -------- |
