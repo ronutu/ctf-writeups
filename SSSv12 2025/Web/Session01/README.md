@@ -6,7 +6,7 @@
 | [Eyes](Eyes/)                           | Easy        | Web      |
 | [Gimme](Gimme/)                         | Easy        | Web      |
 | [Give to Get](Give%20to%20Get/)         | Easy        | Web      |
-| [Give to Post](Give%20to%Post/)         | Easy        | Web      |
+| [Give to Post](Give%20to%20Post/)       | Easy        | Web      |
 | [King-Kong](King-Kong/)                 | Easy        | Web      |
 | [Lame login](Lame%20login/)             | Easy        | Web      |
 | [My Special Name](My%20Special%20Name/) | Easy        | Web      |
