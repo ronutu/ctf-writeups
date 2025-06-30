@@ -1,0 +1,62 @@
+# Traverse universe
+
+## Description
+
+Get the flag from [traverse-universe](http://141.85.224.70:8084/planetarium/index.php).
+
+## Intuition
+
+We look in the source code.
+
+## Solution
+
+At the end of the source code there is a comment:
+
+```
+		<!--<script>var _0x5c09=['dot-php','earth\x20','log','slash\x20','dot-dot-slash\x20','flag\x20','NASA\x20'];(function(_0xe916b7,_0x5c0933){var _0x34f1b0=function(_0x4a989c){while(--_0x4a989c){_0xe916b7['push'](_0xe916b7['shift']());}};_0x34f1b0(++_0x5c0933);}(_0x5c09,0xa1));var _0x34f1=function(_0xe916b7,_0x5c0933){_0xe916b7=_0xe916b7-0x0;var _0x34f1b0=_0x5c09[_0xe916b7];return _0x34f1b0;};var algf=_0x34f1('0x4')+_0x34f1('0x1')+_0x34f1('0x3')+'moon\x20'+'slash\x20'+_0x34f1('0x6')+_0x34f1('0x3')+_0x34f1('0x5')+_0x34f1('0x0');console[_0x34f1('0x2')](algf);</script>-->
+
+```
+
+We can put this js code through a beautifier.
+
+```js
+var _0x5c09 = [
+  "dot-php",
+  "earth\x20",
+  "log",
+  "slash\x20",
+  "dot-dot-slash\x20",
+  "flag\x20",
+  "NASA\x20",
+];
+(function (_0xe916b7, _0x5c0933) {
+  var _0x34f1b0 = function (_0x4a989c) {
+    while (--_0x4a989c) {
+      _0xe916b7["push"](_0xe916b7["shift"]());
+    }
+  };
+  _0x34f1b0(++_0x5c0933);
+})(_0x5c09, 0xa1);
+var _0x34f1 = function (_0xe916b7, _0x5c0933) {
+  _0xe916b7 = _0xe916b7 - 0x0;
+  var _0x34f1b0 = _0x5c09[_0xe916b7];
+  return _0x34f1b0;
+};
+var algf =
+  _0x34f1("0x4") +
+  _0x34f1("0x1") +
+  _0x34f1("0x3") +
+  "moon\x20" +
+  "slash\x20" +
+  _0x34f1("0x6") +
+  _0x34f1("0x3") +
+  _0x34f1("0x5") +
+  _0x34f1("0x0");
+console[_0x34f1("0x2")](algf);
+```
+
+Running this code reveals the path for the flag: `dot-dot-slash earth slash moon slash NASA slash flag dot-php`.
+
+## Flag
+
+`SSS{t0_the_m00n_and_back}`

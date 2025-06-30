@@ -1,4 +1,4 @@
-# SSSv12 Binary
+# SSSv12 Web Session01
 
 | Challenge                               | Difficulty  | Category |
 | --------------------------------------- | ----------- | -------- |
