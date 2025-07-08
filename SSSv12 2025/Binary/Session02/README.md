@@ -2,4 +2,4 @@
 
 | Challenge                            | Difficulty | Category |
 | ------------------------------------ | ---------- | -------- |
-| [hyp3rs3rv3r](Detehyp3rs3rv3rctive/) | Easy       | Binary   |
+| [hyp3rs3rv3r](hyp3rs3rv3r/) | Easy       | Binary   |

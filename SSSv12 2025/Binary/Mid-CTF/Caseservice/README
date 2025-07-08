@@ -1,0 +1,7 @@
+Case Exploit
+
+Aici am observat ca atunci cand vrem sa folosim optiunea
+de schimbat a case-ului, putem sa setam ca scriem mai mult
+decat chiar scriem, lucru ce va face programul sa printeze ce
+avea pe stack. Acolo am gasit parola care era bineinteles cu case-ul
+gresit deoarece facea operatiunea de schimbare a case-ului.

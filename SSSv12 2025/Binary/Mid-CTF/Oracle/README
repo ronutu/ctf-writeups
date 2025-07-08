@@ -1,0 +1,7 @@
+Oracle
+
+Am observat cu Ghidra ca primesc numere niste indecsi care reprezinta al catelea
+numar Fibonacci trebuie sa trimit eu. Dupa 1000 de incercari corecte, primeam acces
+la shell. Am creat un program in python (`oracle_solver.py`) care primea un numar
+de la program si calculea numarul Fibonacci cu indexul respectiv si apoi il trimitea
+ca raspun.

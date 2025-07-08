@@ -1,0 +1,7 @@
+Executor
+
+Am observat faptul ca la un moment dat putem scrie niste date
+intr-o zona care are si permisiuni de Write si permisiuni de Execute.
+Am incarcat un shellcode in zona respectiva care porneste un shell.
+Dupa am observat ca la "Going hot" putem face un buffer overflow unde am
+setat adresa de return sa fie cea a zonei in care am incarcat shellcode-ul.
