@@ -41,4 +41,4 @@ The final value looks like this: `0x02000901` which is equal to `33556737` (deci
 
 ## Flag
 
-'SSS_CTF{now_you_know_your_abcs}'
+`SSS_CTF{now_you_know_your_abcs}`
